@@ -67,3 +67,24 @@ POST /api/comments
 GET /api/posts/:id/comments
 
 DELETE /api/comments/:id
+## Installation
+### Clone repository
+
+```bash
+git clone https://github.com/rash111d/itstep-connect-backend.git
+```
+### Open project
+
+```bash
+cd itstep-connect-backend
+```
+### Install dependencies
+
+```bash
+go mod tidy
+```
+### Run backend
+
+```bash
+go run cmd/main.go
+```
