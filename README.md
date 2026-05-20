@@ -20,37 +20,39 @@ Backend часть проекта ITSTEP Connect.
 - Protected Routes
 
 ## Run project
-
 ### 1. Install PostgreSQL
 
 Создать базу данных:
-
 ```sql
 CREATE DATABASE itstep_connect;
-
-2. Configure database
+```
+### 2. Configure database
 
 PostgreSQL config:
 
-dbname: itstep_connect
-user: postgres
-password: 123
-port: 5432
+- dbname: itstep_connect
+- user: postgres
+- password: 123
+- port: 5432
+### 3. Run backend
 
-3. Run backend
+```bash
 go run cmd/main.go
-
+```
 Backend runs on:
-http://localhost:8080
 
-API Routes
-Auth
+```text
+http://localhost:8080
+```
+## API Routes
+
+### Auth
 
 POST /register
 
 POST /login
 
-Posts
+### Posts
 
 GET /api/posts
 
@@ -58,20 +60,10 @@ POST /api/posts
 
 DELETE /api/posts/:id
 
-Comments
+### Comments
 
 POST /api/comments
 
 GET /api/posts/:id/comments
 
 DELETE /api/comments/:id
-
-
----
-
-Потом:
-
-```bash
-git add .
-git commit -m "Improve README"
-git push
