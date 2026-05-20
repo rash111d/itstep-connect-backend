@@ -10,6 +10,8 @@ Backend часть проекта ITSTEP Connect.
 - GORM
 - JWT
 
+---
+
 ## Features
 
 - Register
@@ -19,19 +21,32 @@ Backend часть проекта ITSTEP Connect.
 - Comments CRUD
 - Protected Routes
 
+---
+
 ## Run project
 
-```bash
-go run cmd/main.go
+### 1. Install PostgreSQL
 
-Database
+Создать базу данных:
 
-PostgreSQL:
+```sql
+CREATE DATABASE itstep_connect;
+
+2. Configure database
+
+PostgreSQL config:
 
 dbname: itstep_connect
 user: postgres
 password: 123
 port: 5432
+
+3. Run backend
+go run cmd/main.go
+
+Backend runs on:
+http://localhost:8080
+
 API Routes
 Auth
 
@@ -58,7 +73,9 @@ DELETE /api/comments/:id
 
 ---
 
-# Потом сохранить
+Потом:
 
-```text id="w6m2q8"
-Ctrl + S
+```bash
+git add .
+git commit -m "Improve README"
+git push
