@@ -10,8 +10,6 @@ Backend часть проекта ITSTEP Connect.
 - GORM
 - JWT
 
----
-
 ## Features
 
 - Register
@@ -20,8 +18,6 @@ Backend часть проекта ITSTEP Connect.
 - Posts CRUD
 - Comments CRUD
 - Protected Routes
-
----
 
 ## Run project
 
